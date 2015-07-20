@@ -1,5 +1,11 @@
 {
+    "title": "PressRoom Documentation",
     "structure": {
         "readme": "INTRO.md"
+    },
+    "pluginsConfig": {
+        "fontSettings": {
+            "theme": "night"
+        }
     }
 }

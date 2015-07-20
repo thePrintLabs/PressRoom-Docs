@@ -3,7 +3,7 @@
 #### Variables
 
 - **$edition - _object_**
-WP_Post object (pr_edition) containing all current *Edition* data.
+WP\_Post object (pr\_edition) containing all current *Edition* data.
 
 - **$pr\_theme\_url - _string_**
 Absolute URL of the *Edition* active theme.
@@ -12,32 +12,32 @@ Absolute URL of the *Edition* active theme.
 
 ---
 
-``` php
-pr_get_edition_posts( $edition, $only_enabled )
-```
+\`\`\` php
+pr\_get\_edition\_posts( $edition, $only\_enabled )
+\`\`\`
 Returns the array of content items connected to an Edition.
 
 - **$edition** - _object_
-    The whole *Edition* object
+	The whole *Edition* object
 - **$only\_enabled** - _boolean_
-    Include/Esclude i post marcati come nascosti sul flatplan
+	Include/Esclude posts marked as "hidden" in the flatplan
 
 ---
 
-``` php
-pr_book( $edition_id )
-```
+\`\`\` php
+pr\_book( $edition\_id )
+\`\`\`
 
-Returns a Baker Editon Url [book://](https://github.com/bakerframework/baker/wiki/Book-protocol "book protocol")
+Returns a Baker Editon Url [book://][1]
 
 - **$edition\_id** - _int_
 Edition ID
 
 ---
 
-``` php
-pr_prev( $post_id, $edition_id )
-```
+\`\`\` php
+pr\_prev( $post\_id, $edition\_id )
+\`\`\`
 
 Returns the previous post url following the flatplan order.
 
@@ -48,9 +48,9 @@ Current Edition ID
 
 ---
 
-``` php
-pr_next( $post_id, $edition_id )
-```
+\`\`\` php
+pr\_next( $post\_id, $edition\_id )
+\`\`\`
 
 Returns the next post url following the flatplan order.
 
@@ -61,12 +61,13 @@ Current Edition ID
 
 ---
 
-``` php
-pr_get_sharing_link( $post_id )
-```
+\`\`\` php
+pr\_get\_sharing\_link( $post\_id )
+\`\`\`
 
 Returns the sharing url for the current post.
 
 - **$post\_id** - _int_
 Current post ID
 
+[1]:	https://github.com/bakerframework/baker/wiki/Book-protocol "book protocol"

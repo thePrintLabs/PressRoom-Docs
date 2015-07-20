@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>childOrder</key>
+	<array>
+		<string>_book</string>
+		<string>adding_custom_fonts</string>
+		<string>configuring_an_edition</string>
+		<string>configuring_an_editorial_project</string>
+		<string>connecting_to_baker_framework_apps</string>
+		<string>customizing_the_default_theme</string>
+		<string>hooks</string>
+		<string>installation_and_quickstart</string>
+		<string>other_resources</string>
+		<string>pressroom_api</string>
+		<string>pressroom_settings</string>
+		<string>theming</string>
+		<string>user_guide</string>
+	</array>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>INTRO.md</string>
+		</array>
+		<array>
+			<string>README.md</string>
+		</array>
+		<array>
+			<string>SUMMARY.md</string>
+		</array>
+	</array>
+</dict>
+</plist>
