@@ -5,7 +5,8 @@
     },
     "pluginsConfig": {
         "fontSettings": {
-            "theme": "night"
+            "theme": "night",
+            "size": 2
         }
     }
 }

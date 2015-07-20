@@ -1,43 +1,38 @@
 # PressRoom API
 
-#### Variables
+## Variables
+The following variables are initialized right before the posts parsing thus they're globally available in PR theme files: 
 
-- **$edition - _object_**
-WP\_Post object (pr\_edition) containing all current *Edition* data.
+- `$edition` **\_object\_**     
+`object(WP_Post)` Contains data from the current **Edition**
 
-- **$pr\_theme\_url - _string_**
+- `$editorial_project_id` **\_string\_**   
+URI of the **Edition** active theme.
+
+- `$pr_package_type` **\_string\_**  
+Return the current packager type ('hpub', 'web', etc.)
+
+- `$pr_theme_url`**\_string\_**  
 Absolute URL of the *Edition* active theme.
 
-#### Functions
+## Functions
 
 ---
-
-\`\`\` php
-pr\_get\_edition\_posts( $edition, $only\_enabled )
-\`\`\`
+```php
+pr_get_edition_posts( $edition, $only_enabled )
+```
 Returns the array of content items connected to an Edition.
 
-- **$edition** - _object_
+- ```$edition - _object_```
 	The whole *Edition* object
 - **$only\_enabled** - _boolean_
 	Include/Esclude posts marked as "hidden" in the flatplan
 
 ---
 
-\`\`\` php
-pr\_book( $edition\_id )
-\`\`\`
-
-Returns a Baker Editon Url [book://][1]
-
-- **$edition\_id** - _int_
-Edition ID
-
----
-
-\`\`\` php
-pr\_prev( $post\_id, $edition\_id )
-\`\`\`
+```php
+pr_prev( $post_id, $edition_id )
+```
 
 Returns the previous post url following the flatplan order.
 
@@ -48,9 +43,9 @@ Current Edition ID
 
 ---
 
-\`\`\` php
-pr\_next( $post\_id, $edition\_id )
-\`\`\`
+```php
+pr_next( $post_id, $edition_id )
+```
 
 Returns the next post url following the flatplan order.
 
@@ -61,13 +56,13 @@ Current Edition ID
 
 ---
 
-\`\`\` php
-pr\_get\_sharing\_link( $post\_id )
-\`\`\`
+```php
+pr_get_sharing_link( $post_id )
+```
 
 Returns the sharing url for the current post.
 
-- **$post\_id** - _int_
+- **$post_id** - _int_
 Current post ID
 
 [1]:	https://github.com/bakerframework/baker/wiki/Book-protocol "book protocol"
