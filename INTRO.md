@@ -6,4 +6,4 @@ Everything in PressRoom is structured around the concept of **Editorial Projects
 
 An **Edition** can be exported at the same time to an iOS client based on the [Baker Framework ](https://github.com/bakerframework/baker) and to the web as a standalone microsite.
 
-**PressRoom** is the perfect tool to embrace a sub-compact publishing model, but you’re not restricted to any kind of content structure, since everything is being built to be flexible and highly customizable. Suitable for books, magazines, newspapers or just to manage your static websites and release your blog to multiple channels.
+**PressRoom** is the perfect tool to embrace a sub-compact publishing model, but you’re not restricted to any kind of content structure, since everything is being built to be flexible and highly customizable. Suitable for books, magazines, newspapers or just to manage your static websites.
