@@ -10,14 +10,13 @@ The following variables are initialized right before the posts parsing thus they
 URI of the **Edition** active theme.
 
 - `$pr_package_type` **\_string\_**  
-Return the current packager type ('hpub', 'web', etc.)
+Return the current packager type ( 'hpub', 'web', ... )
 
 - `$pr_theme_url`**\_string\_**  
 Absolute URL of the *Edition* active theme.
 
 ## Functions
 
----
 ```php
 pr_get_edition_posts( $edition, $only_enabled )
 ```
