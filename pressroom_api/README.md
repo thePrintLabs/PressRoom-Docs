@@ -6,7 +6,7 @@
 WP\_Post object (pr\_edition) containing all current *Edition* data.
 
 - **$pr\_theme\_url - _string_**
-Absolute URL of the *Edition* active theme.
+Absolute URL of the *Edition* actives theme.
 
 #### Functions
 
