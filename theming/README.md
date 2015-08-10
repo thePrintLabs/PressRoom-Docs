@@ -2,17 +2,17 @@
 
 In **PressRoom** you are able to set custom themes for each *Editorial Project*. This setting could be overwritten per each *Edition* in the **Edition Meta** tab.
 
-Developing **PressRoom** themes is quick and easy since they inherits almost the same logic used for [Wordpress Theme Development ](http://codex.wordpress.org/Theme_Development/ "Wordpress Theme Devepopment")
+Developing **PressRoom** themes is quick and easy since they inherit almost the same logic used for [Wordpress Theme Development ](http://codex.wordpress.org/Theme_Development/ "Wordpress Theme Devepopment")
 
 ##File Structure
 
 **PressRoom** themes resides inside the ```/pressroom/themes/``` folder.
 
-Themes are essentially made of a config.xml file and a set of **layout files** and assets (css, js, fonts, images, etc. ). Everything has been built for maximum flexibility, thus you are not forced to follow a specific folder structure to organize this contents.
+Themes are essentially made of a config.xml file and a set of **layout files** and assets (css, js, fonts, images, etc. ). Everything has been built for maximum flexibility, thus you are not forced to follow a specific folder structure to organize this content.
 
 
 ### functions.php
-Each **PressRoom** theme could use his own `functions.php` file. Place it wherever make sense for you, it will be recognized automatically.
+Each **PressRoom** theme could use his own `functions.php` file. Place it wherever it makes sense for you, it will be automatically recognized.
 
 ###config.xml
 
