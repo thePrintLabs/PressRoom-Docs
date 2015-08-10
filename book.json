@@ -1,11 +1,12 @@
 {
+    "gitbook": ">=2.2.0",
     "title": "PressRoom Documentation",
     "structure": {
         "readme": "INTRO.md"
     },
+    "plugins": ["video"],
     "pluginsConfig": {
         "fontSettings": {
-            "theme": "night",
             "size": 2
         }
     }

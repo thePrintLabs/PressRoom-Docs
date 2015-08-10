@@ -3,17 +3,21 @@
 ## Variables
 The following variables are initialized right before the posts parsing thus they're globally available in PR theme files: 
 
-- `$edition` **\_object\_**     
+- `$edition` **object**     
 `object(WP_Post)` Contains data from the current **Edition**
 
-- `$editorial_project_id` **\_string\_**   
+- `$editorial_project_id` **string**   
 URI of the **Edition** active theme.
 
-- `$pr_package_type` **\_string\_**  
+- `$pr_package_type` **string**  
 Return the current packager type ( 'hpub', 'web', ... )
 
-- `$pr_theme_url`**\_string\_**  
+- `$pr_theme_url` **string**  
 Absolute URL of the *Edition* active theme.
+
+### Toc additional variable
+
+Inside the theme file identified by the rule `toc` we automatically expose the `$edition_posts` variable which is used to loop through the issue's content items to build the main navigation. The same result could be achieved using the `pr_get_edition_posts` function documented below. 
 
 ## Functions
 
@@ -27,10 +31,9 @@ Returns the array of content items connected to an Edition.
 - **$only\_enabled** - _boolean_
 	Include/Esclude posts marked as "hidden" in the flatplan
 
----
 
 ```php
-pr_prev( $post_id, $edition_id )
+pr_prev( $post_id, $edition )
 ```
 
 Returns the previous post url following the flatplan order.
@@ -40,10 +43,9 @@ Current post ID
 - **$edition\_id** - _int_
 Current Edition ID
 
----
 
 ```php
-pr_next( $post_id, $edition_id )
+pr_next( $post_id, $edition )
 ```
 
 Returns the next post url following the flatplan order.
@@ -53,7 +55,6 @@ Current post ID
 - **$edition\_id** - _int_
 Current Edition ID
 
----
 
 ```php
 pr_get_sharing_link( $post_id )
@@ -65,3 +66,4 @@ Returns the sharing url for the current post.
 Current post ID
 
 [1]:	https://github.com/bakerframework/baker/wiki/Book-protocol "book protocol"
+

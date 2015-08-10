@@ -1,12 +1,7 @@
 # Configuring an Editorial Project
 
-Each Editorial Project has its own settings and a unique endpoint for Baker clients. Basically this means that a single PressRoom powered WordPress install could manage an unlimited number of *Editorial Projects*, and thus an unlimited number of Baker based Apps.
+Editorial Projects are containers for an unlimited number of Editions (Issues). Beyond its __name__ and __slug__ each Editorial Project allow you to define project wide Add-on settings. 
 
-*[screenshot placeholder]*
+For example when the iOS Exporter addon is active each Editorial Project exposes a unique endpoint for iOS apps based on the Baker framework. Basically this means that a single PressRoom powered WordPress install could manage an unlimited number of *Editorial Projects*, and thus an unlimited number of Baker based Apps.
 
-Each editorial project has 4 to 6 sections that need configuration:
-
-- **Basic:** the name and slug of the editorial project.
-- **Visualization / Behaviour:** these are the ```book.json``` settings that are allowed on Baker. PressRoom supports all the available ```book.json``` parameters. For a comprehensive guide about the topic please head over [Book.json Baker extension parameters](https://github.com/bakerframework/baker/wiki/Book.json-Baker-extension-parameters) on the official Baker Framework repository.
-- **TOC:** ```book.json``` settings for the table of contents. More info at [Adding an Index Bar to your publication](https://github.com/bakerframework/baker/wiki/Adding-an-Index-Bar-to-your-publication)
-- **Push Notifications:** Insert your [Parse](https://parse.com/) or [Urban Airship](http://urbanairship.com/) api credentials.
+![Editorial Project editing](https://ps.w.org/pressroom/assets/screenshot-8.jpg?rev=1214957 "PressRoom Editorial Project editing page")
