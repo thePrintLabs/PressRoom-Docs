@@ -4,12 +4,11 @@
     "structure": {
         "readme": "INTRO.md"
     },
-    "plugins": ["video","anchors","codepen","image-captions","customtheme","infinitescroll"],
+    "styles": {
+        "website": "styles/app.css"
+    },
+    "plugins": ["video","anchors","codepen","image-captions"],
     "pluginsConfig": {
-        "customtheme": {
-            "css": ["assets/css/app.css"],
-            "js": ["assets/css/app.js"],
-        },
         "fontSettings": {
             "size": 2
         }

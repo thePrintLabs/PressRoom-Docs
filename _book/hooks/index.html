@@ -29,6 +29,8 @@
         
     
     
+        <link rel="stylesheet" href="../styles/app.css">
+    
 
         
     
@@ -44,7 +46,7 @@
     <body>
         
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="Mon Aug 10 2015 14:59:44 GMT+0100 (BST)">
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="Mon Aug 10 2015 15:51:34 GMT+0100 (BST)">
     
 
 <div class="book-summary">
@@ -428,9 +430,9 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="hooks"><a name="hooks" class="plugin-anchor" href="#hooks"><span class="fa fa-link"></span></a>Hooks</h1>
-<p>During a package creation or while performing a preview action, <strong>PressRoom</strong> parse all the content items connected to an Edition</p>
+<p>During a package creation or while performing a preview action, <strong>PressRoom</strong> parses all the content items connected to an Edition</p>
 <p><strong>Note:</strong>
-This process applies just to content items included in the <strong>flatplan</strong> and in <code>visible</code> status</p>
+This process applies only to content items included in the <strong>flatplan</strong> and in the <code>visible</code> status</p>
 <hr>
 <h4 id="pr-packager-run-post-type"><a name="pr-packager-run-post-type" class="plugin-anchor" href="#pr-packager-run-post-type"><span class="fa fa-link"></span></a>pr_packager_run_<em>{post_type}</em></h4>
 <p>Before writing the html output of each post type.</p>
@@ -448,7 +450,7 @@ add_action( <span class="hljs-string">&apos;pr_packager_run_{custom_post_type}&a
 </code></pre>
 <hr>
 <h4 id="pr-packager-generate-book"><a name="pr-packager-generate-book" class="plugin-anchor" href="#pr-packager-generate-book"><span class="fa fa-link"></span></a>pr_packager_generate_book</h4>
-<p>Hook to the <code>book.json</code> file creation. Could be used to delete, modifiy or add new keys.</p>
+<p>Hook to the <code>book.json</code> file creation. Could be used to delete, modify or add new keys.</p>
 <pre><code class="lang-php">
 <span class="hljs-comment">/**
 * <span class="hljs-doctag">@param</span> array $press_options l&apos;array di tutte le opzioni del book.json

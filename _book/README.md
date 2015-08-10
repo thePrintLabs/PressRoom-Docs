@@ -1,6 +1,6 @@
 ## Introducing PressRoom
 
-[PressRoom](http://press-room.io/) Official Documentation.
+[PressRoom](http://press-room.io/) Official Documentation
 
 > While we constatly put our efforts in keeping this documentation updated,  some some of its parts or media may not reflect the latest version of the software. 
 
