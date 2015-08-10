@@ -1,9 +1,9 @@
 # Hooks
 
-During a package creation or while performing a preview action, **PressRoom** parse all the content items connected to an Edition
+During a package creation or while performing a preview action, **PressRoom** parses all the content items connected to an Edition
 
 **Note:**
-This process applies just to content items included in the **flatplan** and in ``visible`` status
+This process applies only to content items included in the **flatplan** and in the ``visible`` status
 
 ---
 
@@ -26,7 +26,7 @@ add_action( 'pr_packager_run_{custom_post_type}', package_my_custom_post_type , 
 ---
 
 ####pr\_packager\_generate\_book
-Hook to the ``book.json`` file creation. Could be used to delete, modifiy or add new keys.
+Hook to the ``book.json`` file creation. Could be used to delete, modify or add new keys.
 
 ``` php
 
