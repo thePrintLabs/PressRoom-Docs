@@ -8,7 +8,7 @@ This guides has been forked from the original [PugPig][1] documentation guide ab
 
 ### Adding fonts:
 
-1. Add fonts you wish to include in your app a in a folder with a meaningful name i.e. “Fonts”
+1. Add fonts you wish to include in your app in a folder with a meaningful name i.e. “Fonts”
 2. Open your Baker project in Xcode, right click inside the project navigator and select "Add fonts to your [Name] project" and choose the previously created directory.
 3. Select radio button “create groups from added folders” and click “add”.
 4. open the file: <project name>.plist
