@@ -20,6 +20,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-image-captions/image-captions.css">
+        
+    
     
 
         
@@ -36,7 +44,7 @@
     <body>
         
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="Mon Aug 10 2015 13:57:14 GMT+0100 (BST)">
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="Mon Aug 10 2015 14:41:06 GMT+0100 (BST)">
     
 
 <div class="book-summary">
@@ -419,12 +427,12 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="hooks">Hooks</h1>
+                        <h1 id="hooks"><a name="hooks" class="plugin-anchor" href="#hooks"><span class="fa fa-link"></span></a>Hooks</h1>
 <p>During a package creation or while performing a preview action, <strong>PressRoom</strong> parse all the content items connected to an Edition</p>
 <p><strong>Note:</strong>
 This process applies just to content items included in the <strong>flatplan</strong> and in <code>visible</code> status</p>
 <hr>
-<h4 id="pr-packager-run-post-type">pr_packager_run_<em>{post_type}</em></h4>
+<h4 id="pr-packager-run-post-type"><a name="pr-packager-run-post-type" class="plugin-anchor" href="#pr-packager-run-post-type"><span class="fa fa-link"></span></a>pr_packager_run_<em>{post_type}</em></h4>
 <p>Before writing the html output of each post type.</p>
 <pre><code class="lang-php"><span class="hljs-comment">/**
 * <span class="hljs-doctag">@param</span> object $post
@@ -439,7 +447,7 @@ This process applies just to content items included in the <strong>flatplan</str
 add_action( <span class="hljs-string">&apos;pr_packager_run_{custom_post_type}&apos;</span>, package_my_custom_post_type , <span class="hljs-number">10</span>, <span class="hljs-number">2</span> );
 </code></pre>
 <hr>
-<h4 id="pr-packager-generate-book">pr_packager_generate_book</h4>
+<h4 id="pr-packager-generate-book"><a name="pr-packager-generate-book" class="plugin-anchor" href="#pr-packager-generate-book"><span class="fa fa-link"></span></a>pr_packager_generate_book</h4>
 <p>Hook to the <code>book.json</code> file creation. Could be used to delete, modifiy or add new keys.</p>
 <pre><code class="lang-php">
 <span class="hljs-comment">/**
@@ -455,7 +463,7 @@ add_action( <span class="hljs-string">&apos;pr_packager_run_{custom_post_type}&a
 add_action( <span class="hljs-string">&apos;pr_packager_generate_book&apos;</span>, add_my_custom_post_type_to_book_json , <span class="hljs-number">10</span>, <span class="hljs-number">2</span> );
 </code></pre>
 <hr>
-<h4 id="pr-preview-post-type">pr_preview_<em>{post_type}</em></h4>
+<h4 id="pr-preview-post-type"><a name="pr-preview-post-type" class="plugin-anchor" href="#pr-preview-post-type"><span class="fa fa-link"></span></a>pr_preview_<em>{post_type}</em></h4>
 <p>Hook to the previewer. Could be used to modify a post type output before its visualization.</p>
 <pre><code class="lang-php">
 <span class="hljs-comment">/**
@@ -471,7 +479,7 @@ add_action( <span class="hljs-string">&apos;pr_packager_generate_book&apos;</spa
 add_action( <span class="hljs-string">&apos;pr_preview_{custom_post_type}&apos;</span>, add_my_custom_post_type_to_previewer , <span class="hljs-number">10</span>, <span class="hljs-number">3</span> );
 </code></pre>
 <hr>
-<h4 id="press-flush-rule">press_flush_rule</h4>
+<h4 id="press-flush-rule"><a name="press-flush-rule" class="plugin-anchor" href="#press-flush-rule"><span class="fa fa-link"></span></a>press_flush_rule</h4>
 <p>Hook to the PressRoom activation. If you&apos;re extending <strong>PressRoom</strong> declaring new post types under its structure you&apos;ll need to use this hook to correctly handle url rewritings.</p>
 <pre><code class="lang-php"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">custom_post_type</span><span class="hljs-params">()</span> </span>{
 
@@ -507,6 +515,10 @@ add_action( press_flush_rules, <span class="hljs-string">&apos;custom_post_type&
 
         
 <script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-codepen/embed-codepen.js"></script>
+    
 
     
     <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>

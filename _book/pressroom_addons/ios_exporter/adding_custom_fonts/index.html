@@ -20,6 +20,14 @@
         
     <link rel="stylesheet" href="../../../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../../gitbook/plugins/gitbook-plugin-image-captions/image-captions.css">
+        
+    
     
 
         
@@ -36,7 +44,7 @@
     <body>
         
         
-    <div class="book" data-level="1.5.1.2" data-basepath="../../.." data-revision="Mon Aug 10 2015 13:57:14 GMT+0100 (BST)">
+    <div class="book" data-level="1.5.1.2" data-basepath="../../.." data-revision="Mon Aug 10 2015 14:41:06 GMT+0100 (BST)">
     
 
 <div class="book-summary">
@@ -419,11 +427,11 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="adding-custom-fonts">Adding custom fonts</h1>
+                        <h1 id="adding-custom-fonts"><a name="adding-custom-fonts" class="plugin-anchor" href="#adding-custom-fonts"><span class="fa fa-link"></span></a>Adding custom fonts</h1>
 <p><strong>You&apos;re totally free to add custom fonts to your Baker project, provided that you hold the necessary rights to do so.</strong></p>
 <p><strong>Credits:</strong>
 This guides has been forked from the original <a href="http://pugpig.com/" target="_blank">PugPig</a> documentation guide about <a href="https://pugpig.zendesk.com/hc/en-us/articles/200967987-Embedding-Fonts" target="_blank">Embedding Fonts</a>.</p>
-<h3 id="adding-fonts">Adding fonts:</h3>
+<h3 id="adding-fonts"><a name="adding-fonts" class="plugin-anchor" href="#adding-fonts"><span class="fa fa-link"></span></a>Adding fonts:</h3>
 <ol>
 <li>Add fonts you wish to include in your app a in a folder with a meaningful name i.e. &#x201C;Fonts&#x201D;</li>
 <li>Open your Baker project in Xcode, right click inside the project navigator and select &quot;Add fonts to your [Name] project&quot; and choose the previously created directory.</li>
@@ -431,7 +439,7 @@ This guides has been forked from the original <a href="http://pugpig.com/" targe
 <li>open the file: <project name="">.plist</project></li>
 <li>Select any of the keys in the plist file and press the &#x201D;+&#x201D; button to add a new key. Add a new key named &#x201C;Fonts provided by application&#x201D; (array). Click the disclosure triangle to add fonts to your array. Under the value column of each item in the array, type the name of the font including the file&apos;s extension.</li>
 </ol>
-<h3 id="using-embedded-fonts">Using embedded fonts</h3>
+<h3 id="using-embedded-fonts"><a name="using-embedded-fonts" class="plugin-anchor" href="#using-embedded-fonts"><span class="fa fa-link"></span></a>Using embedded fonts</h3>
 <pre><code class="lang-css"><span class="hljs-at_rule">@<span class="hljs-keyword">font-face</span></span> <span class="hljs-rules">{
 <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">&apos;MyFont Sans&apos;</span></span></span>;
     <span class="hljs-rule"><span class="hljs-attribute">src</span>:<span class="hljs-value"> <span class="hljs-function">local</span>(<span class="hljs-string">&apos;MyFontSans&apos;</span>), <span class="hljs-function">url</span>(<span class="hljs-string">&apos;fonts/MyFont-Sans.otf&apos;</span>) <span class="hljs-function">format</span>(<span class="hljs-string">&apos;opentype&apos;</span>)</span></span>;
@@ -455,14 +463,14 @@ and then find the actual font name by listing all fonts from that family:
     <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"><span class="hljs-string">&apos;MyFont Sans&apos;</span>
 }
 </span></span></span></code></pre>
-<h3 id="using-embedded-fonts-in-obj-c">Using embedded fonts in Obj-C</h3>
+<h3 id="using-embedded-fonts-in-obj-c"><a name="using-embedded-fonts-in-obj-c" class="plugin-anchor" href="#using-embedded-fonts-in-obj-c"><span class="fa fa-link"></span></a>Using embedded fonts in Obj-C</h3>
 <p>UILabel example:</p>
 <pre><code class="lang-obj-c">[yourLabelName setFont:[<span class="hljs-built_in">UIFont</span> fontWithName:<span class="hljs-string">@&quot;MyFontSans&quot;</span> size:<span class="hljs-number">18</span>]];
 </code></pre>
-<h3 id="dynamic-type-fonts-support">Dynamic type fonts support</h3>
+<h3 id="dynamic-type-fonts-support"><a name="dynamic-type-fonts-support" class="plugin-anchor" href="#dynamic-type-fonts-support"><span class="fa fa-link"></span></a>Dynamic type fonts support</h3>
 <p>Please refer to the Official Baker guide about the topic
 <a href="https://github.com/bakerframework/baker/wiki/Dynamic-type-fonts-support" target="_blank">Dynamic type fonts support</a></p>
-<h3 id="resources">Resources</h3>
+<h3 id="resources"><a name="resources" class="plugin-anchor" href="#resources"><span class="fa fa-link"></span></a>Resources</h3>
 <ul>
 <li><a href="http://iosfonts.com/" target="_blank">iOS Fonts</a></li>
 <li><a href="http://www.google.com/fonts" target="_blank">Google Fonts</a></li>
@@ -489,6 +497,10 @@ and then find the actual font name by listing all fonts from that family:
 
         
 <script src="../../../gitbook/app.js"></script>
+
+    
+    <script src="../../../gitbook/plugins/gitbook-plugin-codepen/embed-codepen.js"></script>
+    
 
     
     <script src="../../../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>

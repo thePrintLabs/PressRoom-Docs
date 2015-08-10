@@ -20,6 +20,14 @@
         
     <link rel="stylesheet" href="../gitbook/style.css">
     
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-image-captions/image-captions.css">
+        
+    
     
 
         
@@ -36,7 +44,7 @@
     <body>
         
         
-    <div class="book" data-level="2.1" data-basepath=".." data-revision="Mon Aug 10 2015 13:57:14 GMT+0100 (BST)">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="Mon Aug 10 2015 14:41:06 GMT+0100 (BST)">
     
 
 <div class="book-summary">
@@ -419,8 +427,8 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="pressroom-api">PressRoom API</h1>
-<h2 id="variables">Variables</h2>
+                        <h1 id="pressroom-api"><a name="pressroom-api" class="plugin-anchor" href="#pressroom-api"><span class="fa fa-link"></span></a>PressRoom API</h1>
+<h2 id="variables"><a name="variables" class="plugin-anchor" href="#variables"><span class="fa fa-link"></span></a>Variables</h2>
 <p>The following variables are initialized right before the posts parsing thus they&apos;re globally available in PR theme files: </p>
 <ul>
 <li><p><code>$edition</code> <strong>object</strong><br><code>object(WP_Post)</code> Contains data from the current <strong>Edition</strong></p>
@@ -432,9 +440,9 @@
 <li><p><code>$pr_theme_url</code> <strong>string</strong><br>Absolute URL of the <em>Edition</em> active theme.</p>
 </li>
 </ul>
-<h3 id="toc-additional-variable">Toc additional variable</h3>
+<h3 id="toc-additional-variable"><a name="toc-additional-variable" class="plugin-anchor" href="#toc-additional-variable"><span class="fa fa-link"></span></a>Toc additional variable</h3>
 <p>Inside the theme file identified by the rule <code>toc</code> we automatically expose the <code>$edition_posts</code> variable which is used to loop through the issue&apos;s content items to build the main navigation. The same result could be achieved using the <code>pr_get_edition_posts</code> function documented below. </p>
-<h2 id="functions">Functions</h2>
+<h2 id="functions"><a name="functions" class="plugin-anchor" href="#functions"><span class="fa fa-link"></span></a>Functions</h2>
 <pre><code class="lang-php">pr_get_edition_posts( <span class="hljs-variable">$edition</span>, <span class="hljs-variable">$only_enabled</span> )
 </code></pre>
 <p>Returns the array of content items connected to an Edition.</p>
@@ -489,6 +497,10 @@ Current post ID</li>
 
         
 <script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-codepen/embed-codepen.js"></script>
+    
 
     
     <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>

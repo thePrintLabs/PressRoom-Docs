@@ -4,7 +4,7 @@
     "structure": {
         "readme": "INTRO.md"
     },
-    "plugins": ["video"],
+    "plugins": ["video","anchors","codepen","image-captions"],
     "pluginsConfig": {
         "fontSettings": {
             "size": 2
