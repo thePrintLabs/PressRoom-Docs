@@ -1,18 +1,18 @@
 # PressRoom iOS Exporter
 
-the iOS Exporter add-on allow you to pubish PressRoom structured contents to an unlimited number of free and paid iOS Apps powered by the open source Baker framework.
+the iOS Exporter Add-on allows you to pubish PressRoom structured content to an unlimited number of free and paid iOS Apps powered by the open source Baker framework.
 
 ![PressRoom iOS Exporter](http://press-room.io/wp-content/uploads/edd/2015/08/thumb2.png "PressRoom iOS Exporter")
 
 ##Installation
 
 1. Download and unzip the iOS-Exporter plugin.
-2. Copy or upload it to your /wp-content/plugins/ directory, then activate.
+2. Copy or upload it to your /wp-content/plugins/ directory, then activate it.
 3. Insert and validate your license key.
 
 ##Settings
 
-The iOS Exporter allows you to customized its settings at Site/Editorial Project and Issue level. 
+The iOS Exporter allows you to customize its settings at the Site/Editorial Project and the Issue level. 
 
 __Site wide settings__ can be found under the PressRoom menu item in the WordPress Administration Menu. They allow you to customize the visual aspect of the iOS client, both for iPads and iPhones.
 
