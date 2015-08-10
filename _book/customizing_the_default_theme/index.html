@@ -46,7 +46,7 @@
     <body>
         
         
-    <div class="book" data-level="2.4" data-basepath=".." data-revision="Mon Aug 10 2015 15:51:34 GMT+0100 (BST)">
+    <div class="book" data-level="2.4" data-basepath=".." data-revision="Mon Aug 10 2015 16:04:50 GMT+0100 (BST)">
     
 
 <div class="book-summary">
@@ -429,99 +429,116 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="customizing-the-starterr-theme"><a name="customizing-the-starterr-theme" class="plugin-anchor" href="#customizing-the-starterr-theme"><span class="fa fa-link"></span></a>Customizing the Starterr theme</h1>
-<p>The <strong>Starterr</strong> theme has been built with the support of <a href="http://nodejs.org/" target="_blank">Node</a>, <a href="http://bower.io/" target="_blank">Bower</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>.</p>
-<h3 id="quick-start"><a name="quick-start" class="plugin-anchor" href="#quick-start"><span class="fa fa-link"></span></a>Quick start</h3>
-<p>To edit its source files just open a terminal window at the theme root folder, and type:</p>
+                        <blockquote>
+<p>a simple neat theme structured as a boilerplate for <a href="http://press-room.io" target="_blank">PressRoom</a>    </p>
+</blockquote>
+<p><strong>Starterr</strong> is built with the support of <a href="http://nodejs.org/" target="_blank">Node</a>, <a href="http://bower.io/" target="_blank">Bower</a> and <a href="http://gruntjs.com/" target="_blank">Grunt</a>. </p>
+<h2 id="quick-start"><a name="quick-start" class="plugin-anchor" href="#quick-start"><span class="fa fa-link"></span></a>Quick start</h2>
+<p><strong>Starterr</strong> is meant to be used as a strating point to develop your own theme:</p>
+<ol>
+<li>Download</li>
+<li>Unzip</li>
+<li>Rename the unzipped folder and start customizing the <code>config.xml</code> file </li>
+<li>To edit the <strong>Starterr</strong> source files just open a terminal window at the root folder, and type:</li>
+</ol>
 <pre><code class="lang-bash">npm i &amp;&amp; bower i
 </code></pre>
 <p>Then just start watching:</p>
 <pre><code class="lang-bash">grunt watch
 </code></pre>
-<h3 id="basic-theme-file-structure"><a name="basic-theme-file-structure" class="plugin-anchor" href="#basic-theme-file-structure"><span class="fa fa-link"></span></a>Basic theme file structure:</h3>
-<pre><code class="lang-bash">|____starterr
-| |____.bowerrc
-| |____.editorconfig
-| |____.gitignore
-| |____.jshintrc
-| |____assets
-| | |____bower_components
-| | |____css
-| | | |____styles.a38a4712.css
-| | | |____toc.<span class="hljs-number">7</span>a77eb84.css
-| | |____fonts
-| | |____img
-| | | |____fallback.gif
-| | |____js
-| | | |____scripts.min.<span class="hljs-number">665</span>cf2e5.js
-| | | |____<span class="hljs-built_in">source</span>
-| | | | |_____main__init.js
-| | | | |_____toc__init.js
-| | | |____toc.min.<span class="hljs-number">5</span>b460967.js
-| | |____sass
-| | | |____base
-| | | | |_____breakpoints.scss
-| | | | |_____colors.scss
-| | | | |_____embed.scss
-| | | | |_____fonts.scss
-| | | | |_____globals.scss
-| | | | |_____images.scss
-| | | | |_____typography.scss
-| | | |____components
-| | | | |_____callout.scss
-| | | | |_____cover-image.scss
-| | | | |_____entry-meta.scss
-| | | | |_____swiper.scss
-| | | |____layout
-| | | | |_____grid.scss
-| | | |____pages
-| | | | |_____all.scss
-| | | | |_____toc.scss
-| | | |____styles.scss
-| | | |____toc.scss
-| | | |____utility
-| |____bower.json
-| |____Gruntfile.js
-| |____inc
-| | |____functions.php
-| |____layouts
-| | |____basic-article.php
-| | |____components
-| | | |____coverimage.php
-| | |____index.php
-| | |____partials
-| | | |____content.php
-| | | |____head.php
-| | |____toc.php
-| |____package.json
-| |____version.json
+<h2 id="theme-file-structure"><a name="theme-file-structure" class="plugin-anchor" href="#theme-file-structure"><span class="fa fa-link"></span></a>Theme file structure:</h2>
+<p>While developing PressRoom themes you&apos;re not bound to a specific directory structure, the only strict requirement is to declare your layout files in <code>config.xml</code></p>
+<p>Here we decided to place all of our layout files inside a <code>layout/</code> folder. We also opted to create a <code>components/</code> folder to hold special fragments and a <code>partial/</code> folder to hold fragment commonly shared between files. As said, this act just as an example. </p>
+<pre><code class="lang-bash">&#x251C;&#x2500;&#x2500; Gruntfile.js
+&#x251C;&#x2500;&#x2500; README.md
+&#x251C;&#x2500;&#x2500; Starterr-logo.png
+&#x251C;&#x2500;&#x2500; assets
+&#x2502;   &#x251C;&#x2500;&#x2500; bower_components
+&#x2502;   &#x251C;&#x2500;&#x2500; css
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; styles.css
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; toc.css
+&#x2502;   &#x251C;&#x2500;&#x2500; fonts
+&#x2502;   &#x251C;&#x2500;&#x2500; img
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; fallback.gif
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; logo.svg
+&#x2502;   &#x251C;&#x2500;&#x2500; js
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; scripts.js
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; scripts.min.js
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; <span class="hljs-built_in">source</span>
+&#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; _main__init.js
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; _toc__init.js
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; toc.js
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; toc.min.js
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; vendor
+&#x2502;   &#x2502;       &#x2514;&#x2500;&#x2500; modernizr-custom.js
+&#x2502;   &#x251C;&#x2500;&#x2500; pr-manifest.json
+&#x2502;   &#x2514;&#x2500;&#x2500; sass
+&#x2502;       &#x251C;&#x2500;&#x2500; base
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _bk-typography.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _breakpoints.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _colors.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _embed.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _fonts.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _globals.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _images.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _logo.scss
+&#x2502;       &#x2502;   &#x2514;&#x2500;&#x2500; _typography.scss
+&#x2502;       &#x251C;&#x2500;&#x2500; components
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _callout.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _cover-image.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _entry-meta.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _gallery.scss
+&#x2502;       &#x2502;   &#x2514;&#x2500;&#x2500; _swiper.scss
+&#x2502;       &#x251C;&#x2500;&#x2500; layout
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _footer.scss
+&#x2502;       &#x2502;   &#x2514;&#x2500;&#x2500; _grid.scss
+&#x2502;       &#x251C;&#x2500;&#x2500; pages
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _all.scss
+&#x2502;       &#x2502;   &#x251C;&#x2500;&#x2500; _cover.scss
+&#x2502;       &#x2502;   &#x2514;&#x2500;&#x2500; _toc.scss
+&#x2502;       &#x251C;&#x2500;&#x2500; styles.scss
+&#x2502;       &#x251C;&#x2500;&#x2500; themes
+&#x2502;       &#x251C;&#x2500;&#x2500; toc.scss
+&#x2502;       &#x2514;&#x2500;&#x2500; utility
+&#x251C;&#x2500;&#x2500; bower.json
+&#x251C;&#x2500;&#x2500; config.xml
+&#x251C;&#x2500;&#x2500; inc
+&#x2502;   &#x251C;&#x2500;&#x2500; functions.php
+&#x2502;   &#x2514;&#x2500;&#x2500; pr_scripts.php
+&#x251C;&#x2500;&#x2500; layouts
+&#x2502;   &#x251C;&#x2500;&#x2500; basic-article.php
+&#x2502;   &#x251C;&#x2500;&#x2500; components
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; coverimage.php
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; fontobserver.php
+&#x2502;   &#x251C;&#x2500;&#x2500; cover.php
+&#x2502;   &#x251C;&#x2500;&#x2500; partials
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; content.php
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; cover
+&#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; content.php
+&#x2502;   &#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; footer.php
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; footer.php
+&#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; head.php
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; header.php
+&#x2502;   &#x2514;&#x2500;&#x2500; toc.php
+&#x251C;&#x2500;&#x2500; package.json
+&#x251C;&#x2500;&#x2500; screenshot.png
+&#x2514;&#x2500;&#x2500; version.json
 </code></pre>
 <h2 id="credits"><a name="credits" class="plugin-anchor" href="#credits"><span class="fa fa-link"></span></a>Credits</h2>
 <h3 id="sass"><a name="sass" class="plugin-anchor" href="#sass"><span class="fa fa-link"></span></a>Sass</h3>
-<p>Bourbon and Scut together may seems an overload but since they are mixing libraries you&apos;ll generate just from what you&apos;ll use ; )</p>
 <ul>
-<li><a href="https://github.com/thoughtbot/bourbon" target="_blank">Bourbon</a> <em>by</em> <a href="http://robots.thoughtbot.com/" target="_blank">thoughtbot</a>
-A simple and lightweight mixin library for Sass</li>
-<li><a href="http://davidtheclark.github.io/scut/" target="_blank">Scut</a> <em>by</em> <a href="http://davidtheclark.com/" target="_blank">David Clark</a>
-Sass utilities for the frontend laborer</li>
-<li><a href="https://github.com/mojotech/jeet" target="_blank">Jeet</a> <em>by</em> <a href="http://www.mojotech.com/" target="_blank">MojoTech</a>
-The most advanced, yet intuitive, grid system available for Sass or Stylus</li>
-<li><a href="https://github.com/guardian/sass-mq" target="_blank">Mq</a> <em>by the guys at</em> <a href="http://www.theguardian.com/uk" target="_blank">The Guardian</a>
-A Sass mixin that helps manipulating media queries in an elegant way</li>
-<li><a href="http://pushplaybang.github.io/knife/" target="_blank">Knife</a> by <a href="http://nonacreative.com/" target="_blank">Paul van Zyl</a>
-Nail vertical rhythm, modular scale, and REMs like a boss with this simple set of SASS/SCSS variables, functions and mixins.</li>
+<li><a href="https://github.com/thoughtbot/bourbon" target="_blank">Bourbon</a> <em>by</em> <a href="http://robots.thoughtbot.com/" target="_blank">thoughtbot</a><br>A simple and lightweight mixin library for Sass</li>
+<li><a href="http://davidtheclark.github.io/scut/" target="_blank">Scut</a> <em>by</em> <a href="http://davidtheclark.com/" target="_blank">David Clark</a><br>Sass utilities for the frontend laborer</li>
+<li><a href="https://github.com/mojotech/jeet" target="_blank">Jeet</a> <em>by</em> <a href="http://www.mojotech.com/" target="_blank">MojoTech</a> 
+The most advanced, yet intuitive, grid system available for Sass or Stylus </li>
+<li><a href="https://github.com/guardian/sass-mq" target="_blank">Mq</a> <em>by the guys at</em> <a href="http://www.theguardian.com/uk" target="_blank">The Guardian</a><br>A Sass mixin that helps manipulating media queries in an elegant way </li>
 </ul>
 <h3 id="javascript"><a name="javascript" class="plugin-anchor" href="#javascript"><span class="fa fa-link"></span></a>Javascript</h3>
 <p>All the libs here are standalone pure javascript libraries, for maximum performance on mobile and full support for desktop browsers.</p>
 <ul>
-<li><a href="https://github.com/STRML/textFit" target="_blank">textFit</a> <em>by</em> Samuel Reed
-A jQuery-free component that quickly fits single and multi-line text to the width (and optionally height) of its container.</li>
-<li><a href="https://github.com/toddmotto/fluidvids" target="_blank">FluidVids</a> <em>by</em> <a href="http://toddmotto.com/" target="_blank">Todd Motto</a>
-A lightweight, easy-to-use jQuery plugin for fluid width video embeds.</li>
-<li><a href="http://www.idangero.us/sliders/swiper/" target="_blank">iDangerous Swiper </a> <em>by</em> <a href="http://www.idangero.us/" target="_blank">iDangero.us</a>
-Mobile touch slider &amp; framework with hardware accelerated transitions</li>
-<li><a href="https://github.com/ftlabs/fastclick" target="_blank">FastClick</a> <em>by the guys at</em> <a href="http://labs.ft.com/" target="_blank">FTLabs</a>
-Polyfill to remove click delays on browsers with touch UIs</li>
+<li><a href="https://github.com/toddmotto/fluidvids" target="_blank">FluidVids</a> <em>by</em> <a href="http://toddmotto.com/" target="_blank">Todd Motto</a><br>A lightweight, easy-to-use jQuery plugin for fluid width video embeds. </li>
+<li><a href="http://www.idangero.us/sliders/swiper/" target="_blank">iDangerous Swiper </a> <em>by</em> <a href="http://www.idangero.us/" target="_blank">iDangero.us</a><br>Mobile touch slider &amp; framework with hardware accelerated transitions</li>
+<li><a href="https://github.com/ftlabs/fastclick" target="_blank">FastClick</a> <em>by the guys at</em> <a href="http://labs.ft.com/" target="_blank">FTLabs</a><br>Polyfill to remove click delays on browsers with touch UIs </li>
 </ul>
 
                     
@@ -546,10 +563,6 @@ Polyfill to remove click delays on browsers with touch UIs</li>
 
     
     <script src="../gitbook/plugins/gitbook-plugin-codepen/embed-codepen.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
