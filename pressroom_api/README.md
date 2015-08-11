@@ -28,7 +28,7 @@ Returns the array of content items connected to an Edition.
 
 - ```$edition - _object_```
 	The whole *Edition* object
-- **$only\_enabled** - _boolean_
+- **$only_enabled** - _boolean_
 	Include/Esclude posts marked as "hidden" in the flatplan
 
 
@@ -38,9 +38,9 @@ pr_prev( $post_id, $edition )
 
 Returns the previous post url following the flatplan order.
 
-- **$post\_id** - _int_
+- **$post_id** - _int_
 Current post ID
-- **$edition\_id** - _int_
+- **$edition_id** - _int_
 Current Edition ID
 
 
@@ -50,14 +50,14 @@ pr_next( $post_id, $edition )
 
 Returns the next post url following the flatplan order.
 
-- **$post\_id** - _int_
+- **$post_id** - _int_
 Current post ID
-- **$edition\_id** - _int_
+- **$edition_id** - _int_
 Current Edition ID
 
 
 ```php
-pr_get_sharing_link( $post_id )
+pr_get_sharing_url( $post_id )
 ```
 
 Returns the sharing url for the current post.
