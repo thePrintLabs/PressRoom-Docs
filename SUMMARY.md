@@ -5,6 +5,7 @@
    * [PressRoom global options](pressroom_global_options/README.md)
    * [Configuring an Editorial Project](configuring_an_editorial_project/README.md)
    * [Configuring an Issue](configuring_an_issue/README.md)
+   * [Issue Preview/Export](export_an_issue/README.md)
    * [PressRoom Add-ons](pressroom_addons/README.md)
       * [iOS Exporter](pressroom_addons/ios_exporter/README.md)
          * [Connecting to Baker Framework Apps](pressroom_addons/ios_exporter/connecting_to_baker_framework_apps/README.md)
