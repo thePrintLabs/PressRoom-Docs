@@ -1,6 +1,6 @@
 # Exporting an Issue
 
-Exporting Edition is the PressRoom core feature. It works by parsing flatplan content items through the PressRoom template system. 
+Edition export is the PressRoom core feature. It works by parsing the flatplan content items through the PressRoom template system. 
 > For more info about PressRoom themes see [Theming](../theming/README.md)
 
 ![Edit Issue screen](https://ps.w.org/pressroom/assets/screenshot-3.jpg?rev=1214957 "Edit Issue screen")
