@@ -10,6 +10,9 @@ An **Issue** can be exported at the same time to unlimited [iOS](pressroom_addon
 
 **PressRoom** is the perfect tool to embrace a [sub-compact publishing model](http://craigmod.com/journal/subcompact_publishing/), but you’re not restricted to any kind of content structure, since everything is being built to be flexible and highly customizable. Suitable for books, magazines, newspapers or just to manage your static websites and release your blog to multiple channels.
 
+Version __1.2.3__   
+published on 12 August 2015
+
 > While we constatly put our efforts in keeping this documentation updated some some of its parts or media may not reflect the latest version of the software. 
 > Please head over the offical doc repository for any documentation related issues or bug or pull request
 > https://github.com/thePrintLabs/PressRoom-Docs 
